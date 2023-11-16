@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nadila Fitri Noviardhana</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #e0f7fa; 
+            color: #333; 
+        }
+
+        section {
+            border: 2px solid #00bcd4; 
+            border-radius: 8px; 
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #051413;
+            text-align: center;
+            background-color: #00bcd4; 
+            padding: 10px;
+            border-radius: 8px; 
+        }
+
+        h2 {
+            color: #20b2aa; 
+        }
+
+        p {
+            color: #555; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; 
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Portofolio</h1>
+
+        <p>Saya tengah mempelajari skill mengenai permograman web dan juga bahasa python. Dalam project dan tugas saya, kerap kali menggunakan always data dan juga github. 
+            Maka berikut adalah bentuk portofolio dari saya.</p>
+
+        <h2>Link Github:</h2>
+        <p><a href="https://github.com/Nadilaftr" target="_blank">https://github.com/Nadilaftr</a></p>
+    </section>
+
+    <section class="project">
+        <h2>Proyek Alwaydata: Pembuatan Blog di Site Utama</h2>
+        <p><a href="https://nadilafitri2.alwaysdata.net/" target="_blank">https://nadilafitri2.alwaysdata.net/</a></p>
+        <img src="{{ url_for('static', filename='proyek1.png') }}" alt="proyek1">
+    </section>
+
+    <section class="project">
+        <h2>Proyek Alwaydata: Program Display JSON Menjadi Tabel, dan Menambahkan Data Baru ke Database</h2>
+        <p><a href="https://nadilafitri2.alwaysdata.net/utsbaru/html_baru.html" target="_blank">https://nadilafitri2.alwaysdata.net/utsbaru/html_baru.html</a></p>
+        <img src="{{ url_for('static', filename='proyek2.png') }}" alt="proyek2">
+    </section>
+    <form action="/fact/" method="get">
+        <button type="submit">Next</button>
+    </form>
+</body>
+
+</html>
