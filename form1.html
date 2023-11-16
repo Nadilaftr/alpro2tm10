@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f8ff; 
+            color: #333; 
+        }
+
+        h2 {
+            color: #40e0d0; 
+            text-align: center;
+            background-color: #00bcd4; 
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #40e0d0; /* Turquoise border */
+        }
+
+        input[type="submit"] {
+            background-color: #40e0d0; /* Turquoise background */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #20b2aa; /* Dark Turquoise background */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hubungan dengan Nad</h2>
+    <form action="http://127.0.0.1:5000/form_submit" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="hubungan">Hubungan dengan Nad:</label>
+        <input type="text" id="hubungan" name="hubungan" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
